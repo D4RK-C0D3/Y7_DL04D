@@ -1,3 +1,4 @@
+function yt_dload(){
 read -p 'Enter youtube video link : ' link
 
 read -p 'Enter vodeo format  [1]Audio | [2]Video  : ' format
@@ -15,3 +16,15 @@ then
 else
 	echo "ERROR! wrong input..."
 fi
+}
+
+for i in {1..1000}
+do
+	read -p 'Enter [1]To Continue Or [2]To exit : ' a
+	if [ $a == 1 ]
+	then
+		yt_dload
+	else
+		exit
+	fi
+done
