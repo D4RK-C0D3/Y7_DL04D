@@ -18,7 +18,7 @@ else
 fi
 }
 
-for i in {1..1000}
+for i in {1..100000}
 do
 	read -p 'Enter [1]To Continue Or [2]To exit : ' a
 	if [ $a == 1 ]
